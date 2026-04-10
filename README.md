@@ -31,10 +31,10 @@ physical_ai/
 arduino-cli board list
 
 # 프로젝트 컴파일 (예: 초음파 센서)
-arduino-cli compile --fqbn arduino:avr:uno sensors/ultrasonic-distance
+arduino-cli compile --fqbn arduino:avr:uno arduino/ultrasonic-distance
 
 # 업로드
-arduino-cli upload -p /dev/cu.usbmodem* --fqbn arduino:avr:uno sensors/ultrasonic-distance
+arduino-cli upload -p /dev/cu.usbmodem* --fqbn arduino:avr:uno arduino/ultrasonic-distance
 
 # 시리얼 모니터
 arduino-cli monitor -p /dev/cu.usbmodem* --config baudrate=9600
@@ -44,4 +44,4 @@ arduino-cli monitor -p /dev/cu.usbmodem* --config baudrate=9600
 
 | 프로젝트 | 경로 | 상태 |
 |---------|------|------|
-| 초음파 거리 측정 | `sensors/ultrasonic-distance` | 완료 |
+| 초음파 거리 측정 | `arduino/ultrasonic-distance` | 완료 |
